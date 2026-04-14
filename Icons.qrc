@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Icons/arrows.png</file>
+        <file>Icons/color.png</file>
+        <file>Icons/ellipse.png</file>
+        <file>Icons/line.png</file>
+        <file>Icons/new.png</file>
+        <file>Icons/open.png</file>
+        <file>Icons/polyline.png</file>
+        <file>Icons/rectangle.png</file>
+        <file>Icons/save.png</file>
+        <file>Icons/select.png</file>
+    </qresource>
+    <qresource prefix="/new/prefix1"/>
+</RCC>
