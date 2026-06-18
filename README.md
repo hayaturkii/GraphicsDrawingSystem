@@ -1,17 +1,29 @@
 # Graphics Drawing System
-An interactive vector desktop drawing application built natively using **C++** and the **Qt Framework**. Developed as part of an advanced Object-Oriented Programming (OOP) curriculum, this system serves as a practical implementation of software engineering design patterns, event-driven architecture, and mathematical geometric modeling.
+An interactive desktop drawing application built with **C++** and the **Qt Framework**. Developed as part of an Object-Oriented Programming (OOP) course, the project demonstrates the use of inheritance, polymorphism, event-driven programming, and graphical user interface development.
 
-## Key Features
-* **Interactive Vector Drawing:** Real-time rendering of fundamental geometric structures including Lines, Rectangles, Ellipses, and dynamic multi-point Polylines.
-* **Polymorphic Shape Manipulation:**
-  * **Selection Engine:** Custom ray-casting bounding boxes detect precise mouse-click positions to isolate canvas objects.
-  * **Translation Canvas:** Real-time graphical shifting (pixel offsets along the X/Y axes).
-  * **Dynamic Recoloring:** Native bridge integration with `QColorDialog` for updating border styles dynamically.
-* **Real-Time Geometric Computations:** Continuous evaluation of perimeter, area, and Euclidean lengths outputted directly to the live system status bar.
-* **File Serialization System:** Implements native project state persistence, enabling users to export and load active layout schemas natively as `.draw` binaries via `QDataStream`.
+## Features
+- Draw geometric shapes including:
+  - Lines
+  - Rectangles
+  - Ellipses
+  - Polylines
+- Select and manipulate existing shapes
+- Move shapes using coordinate offsets
+- Change shape colors using Qt's built-in color picker
+- Real-time calculation of:
+  - Area
+  - Perimeter
+  - Length
+- Save and load drawings using custom `.draw` files
+- Interactive mouse-based drawing with live visual feedback
 
-## Architecture & Core OOP Design
-The core engineering strategy utilizes strict **Object-Oriented Programming (OOP)** paradigms to abstract rendering pipelines away from structural layout layers.
+## Technologies Used
+- C++
+- Qt Framework (Widgets, QPainter, QDataStream)
+- Object-Oriented Programming (Inheritance, Polymorphism, Encapsulation)
+
+## Architecture
+The application is built around an abstract `Shape` base class, allowing all geometric objects to share a common interface while implementing their own drawing and calculation logic.
 
 ```text
        +-----------------------+
